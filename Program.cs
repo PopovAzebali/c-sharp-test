@@ -6,19 +6,19 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            string firstName = "Попов";
-            string lastName = "Алексей";
-            string reserve;
+            int album = 52;
+            int row = 3;
+            int fullRow;
+            int excess;
 
-            Console.WriteLine("До исправления");
-            Console.WriteLine("Имя : " + firstName);
-            Console.WriteLine("Фамилия : " + lastName);
-            reserve = firstName;
-            firstName = lastName;
-            lastName = reserve;
-            Console.WriteLine("После исправления");
-            Console.WriteLine("Имя : " + firstName);
-            Console.WriteLine("Фамилия : " + lastName);
+            fullRow = album / row;
+
+            Console.WriteLine("Количество полных рядов по 3 картинки = " + fullRow);
+
+            excess = album - (fullRow * row);
+
+            Console.WriteLine("Количество избытка = " + excess + " картинка");
+
         }
     }
 }
