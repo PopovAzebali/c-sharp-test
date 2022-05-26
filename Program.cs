@@ -7,7 +7,7 @@ namespace MyFirstApp
         static void Main(string[] args)
         {
             int album = 52;
-            int row = 3;
+            int rowPicture = 3;
             int fullRow;
             int excess;
 
